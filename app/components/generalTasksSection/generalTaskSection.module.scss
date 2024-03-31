@@ -1,0 +1,60 @@
+.container {
+  padding: 10px 5px;
+}
+
+.slogan {
+  color: #bdbdbd;
+  font-weight: 300;
+}
+
+.itemWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  & > span {
+    font-family: SF Pro Display;
+    font-size: 100px;
+    font-weight: 900;
+    text-align: left;
+    color: #f2f2f2;
+  }
+  & > p {
+    font-family: TT Hoves;
+    text-align: left;
+  }
+}
+
+@media (min-width: 650px) {
+  .slogan {
+    font-size: 64px;
+  }
+  .itemWrapper {
+    & > p {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .container {
+    & > div {
+      display: flex;
+    }
+  }
+  .itemWrapper {
+    width: 50%;
+    & > p {
+      max-width: 400px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .itemWrapper {
+    & > p {
+      font-size: 22px;
+    }
+  }
+}

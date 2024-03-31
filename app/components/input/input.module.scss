@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  color: #8d8d8d;
+  & > p {
+    font-size: 14px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    & > span {
+      color: red;
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+}
+.input {
+  background-color: #f3f3f3;
+  border: none;
+  width: 100%;
+  min-height: 46px;
+  padding-left: 10px;
+}
+
+.input:focus {
+  background-color: white;
+  border: 1px solid #f3f3f3;
+}

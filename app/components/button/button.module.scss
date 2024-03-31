@@ -1,0 +1,15 @@
+.button {
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  padding: 20px 30px;
+  & > svg {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 650px) {
+  .button {
+    padding: 30px 60px;
+  }
+}
