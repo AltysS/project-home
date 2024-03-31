@@ -1,6 +1,6 @@
 .container {
   text-align: right;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   & > h2 {
     color: #bdbdbd;
     text-align: left;
@@ -64,6 +64,9 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   opacity: 1;
+  & > h2 {
+    font-size: 14px;
+  }
   & > button {
     padding: 0 10px;
   }
@@ -94,9 +97,22 @@
 }
 
 @media (min-width: 650px) {
+  .imageText {
+    & > h2 {
+      font-size: 24px;
+    }
+  }
   .container {
     & > h2 {
       font-size: 64px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .imageText {
+    & > h2 {
+      font-size: 40px;
     }
   }
 }

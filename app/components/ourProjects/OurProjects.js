@@ -19,7 +19,13 @@ const OurProjects = () => {
             <img src={project.src} alt={`Project ${index}`} />
             <div className={styles.imageText}>
               <h2>{project.text}</h2>
-              <Button text="ПОДРОБНЕЕ" color="#FFFFFF" arrowColor="#FFFFFF" />
+              <Button
+                text="ПОДРОБНЕЕ"
+                color="#FFFFFF"
+                arrowColor="#FFFFFF"
+                background={"inherit"}
+                nohover={true}
+              />
             </div>
           </div>
         ))}

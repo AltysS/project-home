@@ -27,6 +27,12 @@
 
 .wrapper {
   padding: 10px 5px;
+  max-width: 1170px;
+  margin: 0 auto;
+  & > div:first-child {
+    max-width: 60px;
+    margin: auto;
+  }
 }
 
 .socialIconsWrapper {
@@ -41,19 +47,29 @@
 
 @media (min-width: 650px) {
   .wrapper {
+    & > div:first-child {
+      max-width: none;
+      margin: none;
+    }
     display: flex;
     text-align: left;
-    gap: 50px;
+    gap: 20px;
     & > div {
       & > svg {
-        height: 24px;
+        height: 100%;
+        width: 100%;
       }
     }
     & > div:nth-child(2) > nav > ul {
+      align-items: flex-start;
       flex-direction: column;
     }
   }
   .contacts {
+    max-width: 350px;
+    & > h2 {
+      margin-left: 40px;
+    }
     & > div > p {
       margin-left: 0;
     }
