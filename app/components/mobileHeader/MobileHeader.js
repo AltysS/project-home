@@ -8,6 +8,7 @@ import CloseIcon from "@mui/icons-material/Close";
 
 const MobileHeader = ({ menuItems }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  // Has to be used to highlight the active tab if needed
   const [activeTab, setActiveTab] = useState(0);
 
   const handleMenu = () => {
@@ -36,7 +37,11 @@ const MobileHeader = ({ menuItems }) => {
             <div>
               <CloseIcon onClick={handleMenu} />
             </div>
-            <MenuItems activeTab={activeTab} menuItems={menuItems} />
+            <MenuItems
+              handleClick={handleMenu}
+              activeTab={activeTab}
+              menuItems={menuItems}
+            />
           </div>
         </>
       )}
