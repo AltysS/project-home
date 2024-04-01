@@ -97,6 +97,9 @@
 }
 
 @media (min-width: 650px) {
+  .container {
+    margin-bottom: 120px;
+  }
   .imageText {
     & > h2 {
       font-size: 24px;
@@ -110,6 +113,9 @@
 }
 
 @media (min-width: 1000px) {
+  .imageWrapper {
+    gap: 30px;
+  }
   .imageText {
     & > h2 {
       font-size: 40px;
