@@ -20,6 +20,13 @@
   }
 }
 
+.checkboxWrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 650px) {
   .container {
     margin-bottom: 120px;

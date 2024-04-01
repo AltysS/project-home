@@ -4,6 +4,7 @@ import Input from "../input/Input";
 import styles from "./contactUsSection.module.scss";
 import TextArea from "../textArea/TextArea";
 import Button from "../button/Button";
+import Checkbox from "../checkbox/Checkbox";
 
 const ContactUsSection = () => {
   const [formData, setFormData] = useState({
@@ -74,7 +75,12 @@ const ContactUsSection = () => {
             onChange={handleChange}
             value={formData.message}
           />
-          <p>Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
+          <div className={styles.checkboxWrapper}>
+            <Checkbox required={true} />
+            <p>
+              Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+            </p>
+          </div>
           <div>
             <Button
               type="submit"
